@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'root.min';
+
+.active {
+  border-bottom: 0.1rem solid;
+  border-color: #EC775C;
+}
