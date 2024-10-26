@@ -13,7 +13,7 @@ const getUser = async (req, res) => {
     const user = await User.findOne({ where: { username } })
 
     response['status']  = true
-    response['data']    = user
+    response['data']    = user.toJSON()
     response['message'] = 'User data retrieved'
   } catch (err) {
     response['code'] = 500

@@ -1,7 +1,7 @@
-import React from 'react'
+import React  from 'react'
 import Header from '@sec/Header'
-import Aside from '@sec/Aside'
-import Body from '@sec/Body'
+import Aside  from '@sec/Aside'
+import Body   from '@sec/Body'
 
 const Home = () => {
   return (

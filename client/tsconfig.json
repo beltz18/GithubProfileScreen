@@ -20,6 +20,7 @@
     ],
     "paths": {
       "@com/*": ["./src/components/*"],
+      "@lib/*": ["./src/lib/*"],
       "@sec/*": ["./src/sections/*"],
       "@sty/*": ["./src/styles/*"],
       "@typ/*": ["./src/types/*"],
