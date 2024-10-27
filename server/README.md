@@ -1,6 +1,6 @@
-# Client
+# Server
 
-- First, create a .env.local file at the root of this folder with the enviroment variables for the project (the only one required is the SERVER variable).
+- First, create a .env file at the root of this folder with the enviroment variables for the project (PORT and PG_URI).
 
 - Install the necessary dependencies using:
 ```bash
