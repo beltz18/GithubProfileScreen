@@ -13,6 +13,7 @@ export const getUserData = async (username: string) => {
     const r = await instance.post('/get/user', { username })
     return r.data
   } catch (err) {
+    console.log(err)
     return sample
   }
 }
@@ -22,6 +23,7 @@ export const getReposData = async () => {
     const r = await instance.get('/get/repos')
     return r.data
   } catch (err) {
+    console.log(err)
     sample['data'] = []
     return sample
   }

@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { SERVER, TIMEOUT } from '@lib/var'
 import { UserT } from '@typ/User'
+import { ColorsT } from '@typ/Colors'
 
 export const instance = axios.create({
   baseURL: SERVER,
@@ -19,7 +20,7 @@ export const exampleData : UserT = {
   url: '/',
 }
 
-export const colors : any = {
+export const colors : ColorsT = {
   javascript: 'bg-[#F1E05A]',
   typescript: 'bg-[#3178C6]',
   python: 'bg-[#3572A5]',
