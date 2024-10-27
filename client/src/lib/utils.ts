@@ -18,3 +18,13 @@ export const exampleData : UserT = {
   location: 'loading...',
   url: '/',
 }
+
+export const colors : any = {
+  javascript: 'bg-[#F1E05A]',
+  typescript: 'bg-[#3178C6]',
+  python: 'bg-[#3572A5]',
+  html: 'bg-[#E34C26]',
+  ejs: 'bg-[#A91E50]',
+  css: 'bg-[#563D7C]',
+  md: 'bg-[#C0C0C0]',
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Search, Star } from 'lucide-react'
+import { Search } from 'lucide-react'
 import Pagination from '@com/Pagination'
 import ReposData from '@com/ReposData'
 import { getReposData } from '@lib/ServerActions'

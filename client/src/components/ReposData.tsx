@@ -3,15 +3,21 @@
 import React, { useEffect, useState } from 'react'
 import { Star } from 'lucide-react'
 import { ReposT } from '@typ/Repo'
+import { useStorePages } from '@lib/state'
+import { colors } from '@lib/utils'
 
 const ReposData = ({ reposData }: { reposData: ReposT }) => {
+  const { current, setPages } = useStorePages()
+  const data = [...reposData]
+
   const [repos, setRepos] = useState<ReposT>([])
   const [lding, setLding] = useState<boolean>(true)
 
   useEffect(() => {
-    setRepos(reposData)
+    setRepos(data.slice((current*10), (current*10)+10))
+    setPages(reposData.length)
     setLding(false)
-  }, [reposData])
+  }, [reposData, current])
 
   return (
     <>
@@ -45,7 +51,7 @@ const ReposData = ({ reposData }: { reposData: ReposT }) => {
                   {
                     repo.language && (
                       <span className='flex items-center capitalize'>
-                        <span className='w-3 h-3 rounded-full bg-[#3178c6] mr-1' />
+                        <span className={`w-3 h-3 rounded-full ${colors[repo.language.toLowerCase()]} mr-1`} />
                         { repo.language }
                       </span>
                     )
